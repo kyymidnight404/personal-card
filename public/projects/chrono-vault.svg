@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
+  <rect width="1200" height="800" fill="#050505"/>
+  <rect x="110" y="84" width="980" height="632" rx="20" fill="#0D0D10" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1.5"/>
+  <text x="164" y="146" fill="#92929B" font-family="monospace" font-size="12" letter-spacing="3">CHRONO VAULT // ENTERPRISE ARCHIVE &amp; LARAVEL API</text>
+  <line x1="164" y1="172" x2="1036" y2="172" stroke="#FFFFFF" stroke-opacity="0.08"/>
+
+  <!-- Timeline Tracks -->
+  <g stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1">
+    <line x1="164" y1="260" x2="1036" y2="260"/>
+    <line x1="164" y1="360" x2="1036" y2="360"/>
+    <line x1="164" y1="460" x2="1036" y2="460"/>
+    <line x1="164" y1="560" x2="1036" y2="560"/>
+  </g>
+
+  <rect x="210" y="236" width="280" height="48" rx="10" fill="#151519" stroke="#F5F5F7" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="236" y="265" fill="#F5F5F7" font-family="monospace" font-size="13">CLUSTER_SYNC // 01</text>
+
+  <rect x="430" y="336" width="360" height="48" rx="10" fill="#151519" stroke="#A1A1AA" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="456" y="365" fill="#F5F5F7" font-family="monospace" font-size="13">DISTRIBUTED_LEDGER // 02</text>
+
+  <rect x="310" y="436" width="440" height="48" rx="10" fill="#151519" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1.5"/>
+  <text x="336" y="465" fill="#A1A1AA" font-family="monospace" font-size="13">ZERO_KNOWLEDGE_SNAPSHOT // 03</text>
+
+  <rect x="580" y="536" width="320" height="48" rx="10" fill="#151519" stroke="#F5F5F7" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="606" y="565" fill="#F5F5F7" font-family="monospace" font-size="13">IMMUTABLE_INDEX // 04</text>
+</svg>

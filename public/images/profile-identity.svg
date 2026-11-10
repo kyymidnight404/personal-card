@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 960" fill="none">
+  <defs>
+    <radialGradient id="glow1" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="50%" stop-color="#A1A1AA" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#050505" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="800" y2="960" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#151519"/>
+      <stop offset="50%" stop-color="#0D0D10"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="metalBorder" x1="0" y1="0" x2="800" y2="960" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#A1A1AA" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.22"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="960" fill="url(#cardGrad)"/>
+  <rect width="800" height="960" fill="url(#grid)"/>
+  <circle cx="400" cy="340" r="360" fill="url(#glow1)"/>
+
+  <!-- Digital Identity Pass Frame -->
+  <rect x="80" y="70" width="640" height="820" rx="24" fill="#0A0A0D" fill-opacity="0.82" stroke="url(#metalBorder)" stroke-width="1.5"/>
+  <rect x="104" y="94" width="592" height="772" rx="16" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top Pass Header -->
+  <circle cx="148" cy="138" r="6" fill="#F5F5F7" fill-opacity="0.8"/>
+  <circle cx="170" cy="138" r="6" fill="#92929B" fill-opacity="0.35"/>
+  <text x="530" y="143" fill="#92929B" font-family="monospace" font-size="13" letter-spacing="3">ID // KM-001</text>
+  <line x1="104" y1="176" x2="696" y2="176" stroke="#FFFFFF" stroke-opacity="0.08"/>
+
+  <!-- Center Geometric Monogram Sculpture -->
+  <circle cx="400" cy="410" r="156" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="4 6"/>
+  <circle cx="400" cy="410" r="120" stroke="url(#metalBorder)" stroke-width="1.5"/>
+  <circle cx="400" cy="410" r="82" fill="#121217" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1"/>
+
+  <!-- K M Monogram Geometry -->
+  <path d="M356 368V452M356 410L396 368M372 394L402 452" stroke="#F5F5F7" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M412 452V368L434 412L456 368V452" stroke="#A1A1AA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Crosshair Accents -->
+  <path d="M400 220V244M400 576V600M210 410H234M566 410H590" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="1.2"/>
+
+  <!-- Pass Metadata Footer -->
+  <line x1="104" y1="650" x2="696" y2="650" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <text x="140" y="704" fill="#92929B" font-family="monospace" font-size="12" letter-spacing="3">DIGITAL IDENTITY PASS</text>
+  <text x="140" y="742" fill="#F5F5F7" font-family="sans-serif" font-weight="700" font-size="28" letter-spacing="1">KYYMIDNIGHT</text>
+  <text x="140" y="774" fill="#A1A1AA" font-family="monospace" font-size="14" letter-spacing="1.5">UI/UX ARCHITECT &amp; CREATIVE DEVELOPER</text>
+
+  <!-- Barcode / Specular Strip -->
+  <g opacity="0.45" fill="#F5F5F7">
+    <rect x="140" y="806" width="3" height="24"/>
+    <rect x="148" y="806" width="1.5" height="24"/>
+    <rect x="155" y="806" width="6" height="24"/>
+    <rect x="166" y="806" width="2" height="24"/>
+    <rect x="174" y="806" width="4" height="24"/>
+    <rect x="184" y="806" width="1.5" height="24"/>
+    <rect x="190" y="806" width="8" height="24"/>
+    <rect x="204" y="806" width="2" height="24"/>
+    <rect x="212" y="806" width="5" height="24"/>
+    <rect x="222" y="806" width="1.5" height="24"/>
+    <rect x="228" y="806" width="3" height="24"/>
+  </g>
+  <text x="530" y="823" fill="#92929B" font-family="monospace" font-size="12" letter-spacing="2">VERIFIED // 2026</text>
+</svg>

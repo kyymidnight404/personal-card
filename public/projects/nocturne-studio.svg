@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <radialGradient id="nocGlow" cx="65%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#A1A1AA" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#050505" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="nocBorder" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#92929B" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#050505"/>
+  <circle cx="740" cy="280" r="460" fill="url(#nocGlow)"/>
+
+  <!-- Editorial Frame -->
+  <rect x="100" y="80" width="1000" height="640" rx="18" fill="#0D0D10" stroke="url(#nocBorder)" stroke-width="1.5"/>
+  <text x="156" y="152" fill="#92929B" font-family="monospace" font-size="12" letter-spacing="4">NOCTURNE // INTERACTIVE WEBGL EXHIBITION</text>
+  <line x1="156" y1="178" x2="1044" y2="178" stroke="#FFFFFF" stroke-opacity="0.09"/>
+
+  <!-- Large Display Typography Mock -->
+  <text x="156" y="310" fill="#F5F5F7" font-family="sans-serif" font-weight="700" font-size="78" letter-spacing="-2">SILENCE IN</text>
+  <text x="156" y="400" fill="#A1A1AA" font-family="sans-serif" font-weight="300" font-size="78" letter-spacing="-2">ARCHITECTURE</text>
+
+  <!-- Abstract 3D Wireframe Rings -->
+  <g transform="translate(810, 420)">
+    <ellipse cx="0" cy="0" rx="180" ry="72" transform="rotate(-24)" stroke="#F5F5F7" stroke-opacity="0.45" stroke-width="1.5"/>
+    <ellipse cx="0" cy="0" rx="180" ry="72" transform="rotate(24)" stroke="#A1A1AA" stroke-opacity="0.3" stroke-width="1.5"/>
+    <ellipse cx="0" cy="0" rx="180" ry="72" transform="rotate(72)" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1"/>
+    <circle cx="0" cy="0" r="54" fill="#151519" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/>
+  </g>
+
+  <rect x="156" y="480" width="360" height="160" rx="12" fill="#151519" fill-opacity="0.8" stroke="#FFFFFF" stroke-opacity="0.12"/>
+  <text x="188" y="526" fill="#92929B" font-family="monospace" font-size="12" letter-spacing="2">CURATED ARCHIVE // 02</text>
+  <text x="188" y="564" fill="#F5F5F7" font-family="sans-serif" font-size="20" font-weight="600">Real-time Shader &amp; Brutalist Grid</text>
+  <text x="188" y="600" fill="#A1A1AA" font-family="monospace" font-size="13">60 FPS LOCKED // GSAP + LENIS</text>
+</svg>

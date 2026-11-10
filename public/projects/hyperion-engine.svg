@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
+  <rect width="1200" height="800" fill="#050505"/>
+  <rect x="100" y="80" width="1000" height="640" rx="20" fill="#0D0D10" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1.5"/>
+
+  <!-- HUD Tactical Overlay (Luau / Game UI System) -->
+  <path d="M150 160 H220 M150 160 V230" stroke="#F5F5F7" stroke-width="2"/>
+  <path d="M1050 160 H980 M1050 160 V230" stroke="#F5F5F7" stroke-width="2"/>
+  <path d="M150 640 H220 M150 640 V570" stroke="#F5F5F7" stroke-width="2"/>
+  <path d="M1050 640 H980 M1050 640 V570" stroke="#F5F5F7" stroke-width="2"/>
+
+  <!-- Center Telemetry Reticle -->
+  <circle cx="600" cy="400" r="170" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5" stroke-dasharray="8 8"/>
+  <circle cx="600" cy="400" r="120" stroke="#F5F5F7" stroke-opacity="0.35" stroke-width="1.5"/>
+  <polygon points="600,310 678,445 522,445" stroke="#F5F5F7" stroke-width="2" fill="#FFFFFF" fill-opacity="0.04"/>
+
+  <text x="180" y="140" fill="#92929B" font-family="monospace" font-size="13" letter-spacing="3">HYPERION // LUAU TACTICAL HUD &amp; ENGINE FRAMEWORK</text>
+  <text x="488" y="625" fill="#F5F5F7" font-family="monospace" font-size="14" letter-spacing="4">FRAME TIME: 0.42MS // CLIENT REPLICATED</text>
+</svg>
