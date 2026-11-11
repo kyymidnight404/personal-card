@@ -46,7 +46,7 @@ export const IDENTITY_CONTENT = {
   name: "KYYMIDNIGHT",
   tagline: "UI/UX DESIGNER & DEVELOPER",
   aboutMe:
-    "I'm a student developer exploring UI/UX design and web development, passionate about creating thoughtful digital experiences.",
+    "I'm a developer exploring UI/UX design and web development, passionate about creating thoughtful digital experiences.",
   currentFocus:
     "Designing intuitive interfaces & building modern websites.",
   expertise: [
