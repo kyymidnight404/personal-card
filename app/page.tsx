@@ -26,7 +26,7 @@ export default function HomePage() {
       <div className="relative z-10 w-full max-w-[620px]">
         <IdentityCard
           name="KYYMIDNIGHT"
-          tagline="UI/UX DESIGNER & DEVELOPER"
+          tagline="UI/UX DESIGNER & WEB DEVELOPER"
         />
       </div>
     </div>
