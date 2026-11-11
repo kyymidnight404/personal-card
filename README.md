@@ -1,40 +1,101 @@
-# KyyMidnight — Digital Identity Pass (Single Page)
+# KyyMidnight — Digital Identity Card
 
-A minimalist, high-precision digital identity card for **KyyMidnight** (UI/UX Designer & Developer).
+A minimalist digital identity card designed to represent **KyyMidnight** — combining personal branding, modern interface design, and subtle interactive experiences.
 
----
+Built with a focus on simplicity, visual consistency, and smooth interactions.
 
-## 1. Overview
+## Overview
 
-Proyek ini berfokus pada **1 halaman tunggal (`/`)** yang menampilkan kartu identitas digital interaktif dengan estetika *dark geometric minimalism*:
+KyyMidnight is a single-page digital identity card that introduces personal information, areas of expertise, current focus, interests, and social links through an interactive two-sided card.
 
-- **Bentuk & Layout Kartu**: Kartu horizontal presisi dengan sudut melengkung halus (`rounded-[32px]`), tekstur garis arsitektural (*hatched line pattern*) pada kedua sisi kartu, dan elevasi bayangan berlapis (*layered shadow*).
-- **Sisi Depan (Front)**:
-  - Logo geometris minimalis (segitiga/prism) presisi vektor.
-  - Nama Brand: **KYYMIDNIGHT** (bold uppercase dengan letter-spacing proporsional).
-  - Tagline: **UI/UX DESIGNER & DEVELOPER** (monospace uppercase).
-- **Sisi Belakang (Back — Modular Bento Grid)**:
-  - **Card A — About Me**: Ringkasan identitas personal secara singkat dan jelas.
-  - **Card B — Expertise**: Tag keahlian utama (*UI/UX Design*, *Web Development*, *Front-end Development*, *Prototyping*, *Responsive Design*).
-  - **Card C — Currently**: Highlight kartu fokus saat ini dengan aksen *muted blue-gray* halus.
-  - **Card D — Interests**: Daftar minat (*Gaming*, *Music*, *Design*, *Technology*) dalam gaya *compact chips*.
-  - **Card E — Connect**: Tautan komunikasi terurut (*Email*, *GitHub*, *Instagram*, *Discord*, *Website*).
-- **Interaksi & Aksesibilitas**:
-  - 3D Tilt halus pada perangkat desktop (dinonaktifkan otomatis pada perangkat sentuh dan `prefers-reduced-motion`).
-  - Animasi 3D Flip mulus (600ms) dengan tinggi kedua sisi kartu yang konsisten, mendukung klik/tap maupun navigasi keyboard (`Enter` / `Space`).
-  - Tombol flip dinamis (`Show Back` / `Show Front`).
+The interface follows a **dark geometric minimalism** direction, featuring a clean layout, refined typography, subtle details, and a monochromatic visual identity.
 
----
+## Features
 
-## 2. Cara Menjalankan
+- **Interactive 3D Card** — Flip between front and back views with smooth transitions.
+- **Minimalist Identity Design** — Geometric branding, balanced typography, and a dark visual theme.
+- **Bento Grid Layout** — Organized sections for personal information, expertise, interests, and connections.
+- **Desktop Tilt Effect** — Subtle 3D interaction for pointer-based devices.
+- **Responsive Design** — Adapted for desktop and mobile screens.
+- **Accessibility Support** — Keyboard interaction and reduced-motion preferences.
+- **Smooth Animations** — Carefully tuned transitions for a polished experience.
+
+## Design Concept
+
+The design is based on three principles:
+
+| Principle | Description |
+|---|---|
+| Minimalism | Keeping the interface focused and distraction-free. |
+| Geometric Identity | Using simple geometric elements as visual branding. |
+| Interactive Experience | Adding subtle interactions without compromising usability. |
+
+The front side presents the brand identity, while the back side provides more detailed personal information through a modular layout.
+
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Next.js 15 | React framework |
+| React 19 | UI development |
+| TypeScript | Type-safe development |
+| Tailwind CSS 4 | Styling and responsive layout |
+| GSAP | Advanced animations |
+| Motion | UI transitions and interactions |
+| Lenis | Smooth scrolling |
+| Lucide React | Interface icons |
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 20–22
+- npm
+
+### Installation
+
+Clone the repository:
 
 ```bash
-# Development
-npm run dev
-
-# Type check
-npm run typecheck
-
-# Production Build
-npm run build
+git clone https://github.com/kyymidnight404/personal-card.git
+cd personal-card
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm run start` | Start the production server |
+| `npm run typecheck` | Run TypeScript checks |
+
+## Project Status
+
+This project is a personal digital identity card and an exploration of modern interface design, animation, and interactive web experiences.
+
+## Author
+
+**KyyMidnight**
+
+- GitHub: [@kyymidnight404](https://github.com/kyymidnight404)
+
+---
+
+<p align="center">
+  Designed and built by KyyMidnight.
+</p>
