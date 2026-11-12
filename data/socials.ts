@@ -1,3 +1,4 @@
+
 export interface SocialPlatform {
   id: string;
   name: string;
@@ -40,15 +41,19 @@ export interface TechStackItem {
 }
 
 /**
- * Core identity & content configuration for the KyyMidnight Digital Identity Card.
+ * Core identity & content configuration
+ * for the KyyMidnight Digital Identity Card.
  */
 export const IDENTITY_CONTENT = {
   name: "KYYMIDNIGHT",
   tagline: "UI/UX DESIGNER & DEVELOPER",
+
   aboutMe:
     "I'm a developer exploring UI/UX design and web development, passionate about creating thoughtful digital experiences.",
+
   currentFocus:
     "Designing intuitive interfaces & building modern websites.",
+
   expertise: [
     "UI/UX Design",
     "Web Development",
@@ -56,12 +61,14 @@ export const IDENTITY_CONTENT = {
     "Prototyping",
     "Responsive Design",
   ],
+
   interests: [
     "Gaming",
     "Music",
     "Design",
-    "Technology",
+    "Tech",
   ],
+
   skillCategories: [
     {
       id: "design",
@@ -89,6 +96,8 @@ export const IDENTITY_CONTENT = {
         "Figma",
         "HTML / CSS",
         "JavaScript",
+        "TypeScript",
+        "React",
         "Laravel",
         "Next.js",
         "MySQL",
@@ -100,34 +109,37 @@ export const IDENTITY_CONTENT = {
 
 /**
  * Configurable contact & identity settings.
- * Uses existing project handles and clear placeholders where live endpoints are not yet configured.
  */
 export const CONTACT_CONFIG = {
   name: "KyyMidnight",
   role: "UI/UX Designer & Developer",
-  email: "hello@kyymidnight.example.com",
+
+  email: "kyymidnight404@gmail.com",
+
   github: "https://github.com/kyymidnight404",
   instagram: "https://instagram.com/kyymidnight",
   discord: "https://discord.com/users/1271411215997997175",
   website: "https://kyymidnight.web.id",
-  location: "Jakarta, Indonesia // Remote Worldwide",
+
+  location: "Bandung, Indonesia // Remote Worldwide",
   timezone: "GMT+7 (WIB)",
+
   availability: {
     isAvailable: true,
     statusText: "Open to creative projects",
     detailText:
-      "Currently accepting select Q2/Q3 commissions for design systems, interactive web experiences, and frontend architecture.",
+      "Currently open to selected creative projects, design systems, interactive web experiences, and frontend development collaborations.",
     responseWindow: "Within 24–48 hours",
   },
 };
 
 /**
- * Ordered Connect links following priority:
+ * Ordered Connect links:
  * 1. Email
  * 2. GitHub
  * 3. Instagram
  * 4. Discord
- * 5. Personal Website (kyymidnight.web.id)
+ * 5. Personal Website
  */
 export const CONNECT_LINKS: ConnectLinkItem[] = [
   {
@@ -135,78 +147,102 @@ export const CONNECT_LINKS: ConnectLinkItem[] = [
     label: "Email",
     displayText: "Email",
     href: `mailto:${CONTACT_CONFIG.email}`,
-    isPlaceholder: true,
-    ariaLabel: `Send email to ${CONTACT_CONFIG.email} (placeholder address)`,
+    isPlaceholder: false,
+    ariaLabel: `Send email to ${CONTACT_CONFIG.email}`,
   },
   {
     id: "github",
     label: "GitHub",
     displayText: "GitHub",
     href: CONTACT_CONFIG.github,
-    ariaLabel: "Visit KyyMidnight on GitHub (kyymidnight404, opens in new tab)",
+    ariaLabel:
+      "Visit KyyMidnight on GitHub (kyymidnight404, opens in new tab)",
   },
   {
     id: "instagram",
     label: "Instagram",
     displayText: "Instagram",
     href: CONTACT_CONFIG.instagram,
-    ariaLabel: "Visit KyyMidnight on Instagram (@kyymidnight, opens in new tab)",
+    ariaLabel:
+      "Visit KyyMidnight on Instagram (@kyymidnight, opens in new tab)",
   },
   {
     id: "discord",
     label: "Discord",
     displayText: "Discord",
     href: CONTACT_CONFIG.discord,
-    ariaLabel: "Connect with KyyMidnight on Discord (opens in new tab)",
+    ariaLabel:
+      "Connect with KyyMidnight on Discord (opens in new tab)",
   },
   {
     id: "website",
     label: "Website",
     displayText: "Website",
     href: CONTACT_CONFIG.website,
-    ariaLabel: "Visit KyyMidnight personal website kyymidnight.web.id (opens in new tab)",
+    ariaLabel:
+      "Visit KyyMidnight personal website (kyymidnight.web.id)",
   },
 ];
 
+/**
+ * Social platforms configuration.
+ */
 export const SOCIAL_PLATFORMS: SocialPlatform[] = [
   {
     id: "email",
     name: "Email",
     label: "DIRECT INQUIRY",
     handle: CONTACT_CONFIG.email,
-    description: "Project briefs, consulting inquiries, and creative collaborations.",
+    description:
+      "Project inquiries, collaboration opportunities, and professional communication.",
     href: `mailto:${CONTACT_CONFIG.email}`,
-    actionLabel: "Send Message",
+    actionLabel: "Send Email",
   },
   {
     id: "github",
     name: "GitHub",
     label: "CODE REPOSITORIES",
-    handle: "github.com/kyymidnight-placeholder",
-    description: "Open-source experiments, UI architectures, and frontend systems.",
-    href: "https://github.com",
+    handle: "github.com/kyymidnight404",
+    description:
+      "Open-source projects, development experiments, and frontend implementations.",
+    href: CONTACT_CONFIG.github,
     actionLabel: "Explore GitHub",
+  },
+  {
+    id: "instagram",
+    name: "Instagram",
+    label: "SOCIAL PRESENCE",
+    handle: "@kyymidnight",
+    description:
+      "Personal updates, creative activities, and visual inspirations.",
+    href: CONTACT_CONFIG.instagram,
+    actionLabel: "Visit Instagram",
   },
   {
     id: "discord",
     name: "Discord",
     label: "REAL-TIME CHANNEL",
-    handle: "kyymidnight#0000 (Placeholder)",
-    description: "Direct synchronous discussions for ongoing engineering & Luau projects.",
-    href: "https://discord.com",
+    handle: "KyyMidnight",
+    description:
+      "Direct communication for discussions, gaming, and creative collaborations.",
+    href: CONTACT_CONFIG.discord,
     actionLabel: "Connect on Discord",
   },
   {
-    id: "figma",
-    name: "Figma",
-    label: "DESIGN SYSTEMS",
-    handle: "@kyymidnight-placeholder",
-    description: "Component libraries, spatial glass tokens, and interactive prototypes.",
-    href: "https://figma.com",
-    actionLabel: "View Figma Profile",
+    id: "website",
+    name: "Website",
+    label: "PERSONAL PORTFOLIO",
+    handle: "kyymidnight.web.id",
+    description:
+      "Explore my digital identity, projects, and creative portfolio.",
+    href: CONTACT_CONFIG.website,
+    actionLabel: "Visit Website",
   },
 ];
 
+/**
+ * Professional expertise.
+ */
 export const EXPERTISE_ITEMS: ExpertiseItem[] = [
   {
     id: "ui-ux",
@@ -214,7 +250,7 @@ export const EXPERTISE_ITEMS: ExpertiseItem[] = [
     title: "UI/UX Design",
     subtitle: "Spatial Clarity & Systems Thinking",
     description:
-      "Architecting intuitive interfaces with disciplined typography, optical balance, and scalable Figma token systems that elevate complex products.",
+      "Designing intuitive interfaces with disciplined typography, visual hierarchy, and scalable design systems using Figma.",
     deliverables: [
       "Design Systems & Tokens",
       "Interactive Prototyping",
@@ -226,9 +262,9 @@ export const EXPERTISE_ITEMS: ExpertiseItem[] = [
     id: "frontend",
     index: "02",
     title: "Frontend Development",
-    subtitle: "Production-Grade Engineering",
+    subtitle: "Modern Web Engineering",
     description:
-      "Building resilient, type-safe web applications using Next.js, React, TypeScript, and Tailwind CSS with obsessive attention to Core Web Vitals.",
+      "Building responsive web applications using React, Next.js, TypeScript, and Tailwind CSS with a focus on maintainability and performance.",
     deliverables: [
       "Next.js App Router Architecture",
       "TypeScript Component Libraries",
@@ -240,13 +276,13 @@ export const EXPERTISE_ITEMS: ExpertiseItem[] = [
     id: "creative-dev",
     index: "03",
     title: "Creative Development",
-    subtitle: "Choreographed Motion & Depth",
+    subtitle: "Motion & Interactive Experiences",
     description:
-      "Bridging design and physics through custom GSAP timelines, inertial scrolling, and tactile shaders that make digital surfaces feel alive.",
+      "Combining design and development to create engaging digital experiences through animations, micro-interactions, and interactive interfaces.",
     deliverables: [
-      "GSAP Timeline Choreography",
-      "ScrollTrigger Storytelling",
-      "Micro-Interaction Physics",
+      "Interactive Web Animations",
+      "Scroll-Based Experiences",
+      "Micro-Interactions",
       "Luau & Real-Time UI Systems",
     ],
   },
@@ -256,57 +292,74 @@ export const EXPERTISE_ITEMS: ExpertiseItem[] = [
     title: "Interactive Experiences",
     subtitle: "Memorable Digital Identities",
     description:
-      "Crafting bespoke web experiences, flagship product launches, and interactive showcases that leave a lasting sensory impression.",
+      "Creating distinctive digital experiences, portfolio websites, and interactive showcases with attention to usability and visual consistency.",
     deliverables: [
       "Editorial Web Experiences",
-      "Custom Cursor & Magnetic UI",
+      "Interactive UI Components",
       "Fluid Page Transitions",
       "Cross-Device Responsiveness",
     ],
   },
 ];
 
+/**
+ * Technologies & tools.
+ */
 export const TECH_STACK: TechStackItem[] = [
   {
     name: "Laravel",
     category: "Backend Architecture",
     tag: "PHP / API Core",
-    description: "Robust server-side architecture, RESTful APIs, and secure data orchestration.",
+    description:
+      "Server-side application development, RESTful APIs, and database integration.",
   },
   {
     name: "React",
     category: "UI Library",
     tag: "Component Model",
-    description: "Declarative, composable user interfaces with predictable state flows.",
+    description:
+      "Building reusable and composable user interfaces with predictable state management.",
   },
   {
     name: "Next.js",
     category: "Full-Stack Framework",
     tag: "App Router / SSR",
-    description: "Hybrid server rendering, route optimization, and instant edge performance.",
+    description:
+      "Modern React framework for server rendering, routing, and optimized web applications.",
   },
   {
     name: "TypeScript",
-    category: "Language",
-    tag: "Strict Type Safety",
-    description: "End-to-end static typing for maintainable, self-documenting codebases.",
+    category: "Programming Language",
+    tag: "Static Type Safety",
+    description:
+      "Improving code reliability and maintainability through static typing.",
   },
   {
     name: "Tailwind CSS",
-    category: "Styling Engine",
-    tag: "Design Tokens",
-    description: "Precision utility system tailored for bespoke monochrome glass aesthetics.",
+    category: "Styling Framework",
+    tag: "Utility-First CSS",
+    description:
+      "Building consistent and responsive interfaces using utility-based styling.",
   },
   {
     name: "Figma",
     category: "Design Tool",
-    tag: "Systems & Variables",
-    description: "High-fidelity wireframing, interactive prototyping, and multi-mode variable tokens.",
+    tag: "Systems & Prototyping",
+    description:
+      "Creating wireframes, high-fidelity interfaces, interactive prototypes, and design systems.",
   },
   {
     name: "Luau",
-    category: "Scripting Engine",
-    tag: "Real-Time Interactive",
-    description: "High-performance typed scripting for interactive HUDs and physics-driven systems.",
+    category: "Scripting Language",
+    tag: "Roblox Development",
+    description:
+      "Developing interactive gameplay systems, interfaces, and game mechanics for Roblox.",
+  },
+  {
+    name: "MySQL",
+    category: "Database",
+    tag: "Relational Database",
+    description:
+      "Managing structured data and relational database architectures.",
   },
 ];
