@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
@@ -461,12 +460,57 @@ export function IdentityCard({
                   </ul>
                 </article>
 
-                {/* CARD E — CONNECT */}
-                <article
-                  aria-labelledby="bento-connect-title"
-                  className="bento-card sm:col-span-7 flex flex-col justify-between rounded-2xl px-4 py-3.5 sm:px-4.5 sm:py-3.5"
-                >
-                  <div className="flex items-center justify-between gap-2">
-                    <h2
-                      id="bento-connect-title"
-                      className="font-mono text-[10px] font-semibold uppercase 
+                
+{/* CARD E — CONNECT */}
+<article
+  aria-labelledby="bento-connect-title"
+  className="bento-card sm:col-span-7 flex flex-col justify-between rounded-2xl px-4 py-3.5 sm:px-4.5 sm:py-3.5"
+>
+  <div className="flex items-center justify-between gap-2">
+    <h2
+      id="bento-connect-title"
+      className="font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-[#94A3B8]"
+    >
+      CONNECT
+    </h2>
+
+    <span
+      aria-hidden="true"
+      className="font-mono text-[9px] uppercase tracking-[0.18em] text-[#94A3B8]/40"
+    >
+      LINKS
+    </span>
+  </div>
+
+  <nav
+    aria-labelledby="bento-connect-title"
+    className="mt-2.5 flex flex-wrap items-center gap-1.5"
+  >
+    {CONNECT_LINKS.map((link) => (
+      <a
+        key={link.id}
+        href={link.href}
+        target={link.id === "email" ? undefined : "_blank"}
+        rel={
+          link.id === "email"
+            ? undefined
+            : "noopener noreferrer"
+        }
+        aria-label={link.ariaLabel}
+        tabIndex={isFlipped ? 0 : -1}
+        onClick={(e) => e.stopPropagation()}
+        onKeyDown={(e) => e.stopPropagation()}
+        className="group/link inline-flex items-center gap-1.5 rounded-lg border border-white/[0.1] bg-white/[0.03] px-2.5 py-1 font-mono text-[10.5px] font-medium text-[#E2E8F0] transition-all duration-200 hover:-translate-y-0.5 hover:border-[#94A3B8]/40 hover:bg-white/[0.08] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#94A3B8] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0C0D12]"
+      >
+        <ConnectIcon id={link.id} />
+
+        <span>{link.displayText}</span>
+
+        <ArrowUpRight
+          aria-hidden="true"
+          className="h-2.5 w-2.5 shrink-0 text-[#94A3B8]/65 transition-all duration-200 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 group-hover/link:text-[#F5F5F7]"
+        />
+      </a>
+    ))}
+  </nav>
+</article>
