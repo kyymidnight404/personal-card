@@ -514,3 +514,12 @@ export function IdentityCard({
     ))}
   </nav>
 </article>
+
+              </div>
+            </div>
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
