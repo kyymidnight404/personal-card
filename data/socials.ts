@@ -10,7 +10,7 @@ export interface SocialPlatform {
 }
 
 export interface ConnectLinkItem {
-  id: "email" | "github" | "instagram" | "discord" | "website";
+  id: "email" | "github" | "discord";
   label: string;
   displayText: string;
   href: string;
@@ -40,10 +40,6 @@ export interface TechStackItem {
   description: string;
 }
 
-/**
- * Core identity & content configuration
- * for the KyyMidnight Digital Identity Card.
- */
 export const IDENTITY_CONTENT = {
   name: "KYYMIDNIGHT",
   tagline: "UI/UX DESIGNER & DEVELOPER",
@@ -105,10 +101,10 @@ export const IDENTITY_CONTENT = {
       ],
     },
   ] satisfies SkillCategoryGroup[],
-} as const;
+};
 
 /**
- * Configurable contact & identity settings.
+ * Contact & identity configuration.
  */
 export const CONTACT_CONFIG = {
   name: "KyyMidnight",
@@ -117,9 +113,7 @@ export const CONTACT_CONFIG = {
   email: "kyymidnight404@gmail.com",
 
   github: "https://github.com/kyymidnight404",
-  instagram: "https://instagram.com/kyymidnight",
   discord: "https://discord.com/users/1271411215997997175",
-  website: "https://kyymidnight.web.id",
 
   location: "Bandung, Indonesia // Remote Worldwide",
   timezone: "GMT+7 (WIB)",
@@ -137,9 +131,7 @@ export const CONTACT_CONFIG = {
  * Ordered Connect links:
  * 1. Email
  * 2. GitHub
- * 3. Instagram
- * 4. Discord
- * 5. Personal Website
+ * 3. Discord
  */
 export const CONNECT_LINKS: ConnectLinkItem[] = [
   {
@@ -159,28 +151,12 @@ export const CONNECT_LINKS: ConnectLinkItem[] = [
       "Visit KyyMidnight on GitHub (kyymidnight404, opens in new tab)",
   },
   {
-    id: "instagram",
-    label: "Instagram",
-    displayText: "Instagram",
-    href: CONTACT_CONFIG.instagram,
-    ariaLabel:
-      "Visit KyyMidnight on Instagram (@kyymidnight, opens in new tab)",
-  },
-  {
     id: "discord",
     label: "Discord",
     displayText: "Discord",
     href: CONTACT_CONFIG.discord,
     ariaLabel:
       "Connect with KyyMidnight on Discord (opens in new tab)",
-  },
-  {
-    id: "website",
-    label: "Website",
-    displayText: "Website",
-    href: CONTACT_CONFIG.website,
-    ariaLabel:
-      "Visit KyyMidnight personal website (kyymidnight.web.id)",
   },
 ];
 
@@ -209,16 +185,6 @@ export const SOCIAL_PLATFORMS: SocialPlatform[] = [
     actionLabel: "Explore GitHub",
   },
   {
-    id: "instagram",
-    name: "Instagram",
-    label: "SOCIAL PRESENCE",
-    handle: "@kyymidnight",
-    description:
-      "Personal updates, creative activities, and visual inspirations.",
-    href: CONTACT_CONFIG.instagram,
-    actionLabel: "Visit Instagram",
-  },
-  {
     id: "discord",
     name: "Discord",
     label: "REAL-TIME CHANNEL",
@@ -227,16 +193,6 @@ export const SOCIAL_PLATFORMS: SocialPlatform[] = [
       "Direct communication for discussions, gaming, and creative collaborations.",
     href: CONTACT_CONFIG.discord,
     actionLabel: "Connect on Discord",
-  },
-  {
-    id: "website",
-    name: "Website",
-    label: "PERSONAL PORTFOLIO",
-    handle: "kyymidnight.web.id",
-    description:
-      "Explore my digital identity, projects, and creative portfolio.",
-    href: CONTACT_CONFIG.website,
-    actionLabel: "Visit Website",
   },
 ];
 
