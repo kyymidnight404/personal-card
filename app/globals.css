@@ -44,11 +44,10 @@ html {
 body {
   background-color: #050505;
   color: #F5F5F7;
-  font-family: var(--font-jakarta), sans-serif;
+  font-family: var(--font-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  selection-background-color: rgba(245, 245, 247, 0.18);
 }
 
 ::selection {
